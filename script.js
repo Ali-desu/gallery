@@ -10,9 +10,9 @@ function startAutoScroll() {
        if(scrollContainer.scrollLeft >= 900) left = true;
         if(scrollContainer.scrollLeft <= 0) left = false;
         if (!left) {
-            scrollContainer.scrollLeft += 2;
+            scrollContainer.scrollLeft += 1;
         } else {
-            scrollContainer.scrollLeft -= 2;
+            scrollContainer.scrollLeft -= 1;
         }
         requestAnimationFrame(startAutoScroll);
     }
